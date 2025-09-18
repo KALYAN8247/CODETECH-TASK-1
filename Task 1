@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm John Doe</h1>
+    <p>Full-Stack Developer | Open Source Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am passionate about building scalable web apps and solving real-world problems.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Weather App</li>
+      <li>Library Management System</li>
+      <li>Portfolio Website</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
+/* style.css */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { text-align: center; padding: 2rem; background: #222; color: white; }
+section { padding: 2rem; }
+form input, form textarea { width: 100%; margin: 0.5rem 0; padding: 0.5rem; }
+button { background: #007BFF; color: white; padding: 0.5rem 1rem; border: none; }
+// script.js
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Message sent successfully!");
+});
